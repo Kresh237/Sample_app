@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
+
+  resources :microposts
+
 
   root 'static_pages#home'
   get  '/help',    to: 'static_pages#help'
